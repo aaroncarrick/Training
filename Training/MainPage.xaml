@@ -6,9 +6,44 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    RequestedTheme="Dark"
+    Background="{ThemeResource SystemRevealChromeLowColor}">
 
-    <Grid>
-
-    </Grid>
+    <ScrollViewer>
+        <StackPanel>
+            <Border
+            BorderBrush="{ThemeResource SystemChromeBlackMediumColor}"
+            BorderThickness="0, 0.5, 0, 0.5">
+                <StackPanel Padding="5" Orientation="Horizontal" Background="{ThemeResource SystemRevealChromeMediumLowColor}">
+                    <Button Foreground="{ThemeResource SystemAccentColorLight3}" Margin="2" BorderThickness="0" CornerRadius="10" Padding="10">
+                        <StackPanel Orientation="Horizontal">
+                            <SymbolIcon Symbol="Home" />
+                        </StackPanel>
+                    </Button>
+                    <Button Foreground="{ThemeResource SystemAccentColorLight3}"  Margin="2" BorderThickness="0" CornerRadius="10" Padding="10">
+                        <StackPanel Orientation="Horizontal">
+                            <SymbolIcon Symbol="Setting" />
+                        </StackPanel>
+                    </Button>
+                    <Button Foreground="{ThemeResource SystemAccentColorLight3}"  Margin="2" BorderThickness="0" CornerRadius="10" Padding="10">
+                        <StackPanel Orientation="Horizontal">
+                            <SymbolIcon Symbol="Add" />
+                        </StackPanel>
+                    </Button>
+                    <Button Foreground="{ThemeResource SystemAccentColorLight3}"  Margin="2" BorderThickness="0" CornerRadius="10" Padding="10">
+                        <StackPanel Orientation="Horizontal">
+                            <SymbolIcon Symbol="Delete" />
+                        </StackPanel>
+                    </Button>
+                    <Button  Foreground="{ThemeResource SystemAccentColorLight3}"  Margin="2" BorderThickness="0" CornerRadius="10" Padding="10">
+                        <StackPanel Orientation="Horizontal">
+                            <SymbolIcon Symbol="Help" />
+                        </StackPanel>
+                    </Button>
+                    
+                </StackPanel>
+                
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
 </Page>
